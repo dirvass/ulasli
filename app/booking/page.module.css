@@ -1,0 +1,33 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 760px;
+}
+
+.label {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.75rem;
+  color: rgba(235, 240, 245, 0.65);
+}
+
+.heading h2 {
+  margin: 0;
+  font-family: var(--font-playfair);
+  font-size: clamp(2.1rem, 3vw, 2.6rem);
+  letter-spacing: 0.12em;
+}
+
+.heading p {
+  margin: 0;
+  line-height: 1.8;
+  color: rgba(235, 240, 245, 0.82);
+}

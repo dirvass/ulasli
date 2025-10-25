@@ -1,0 +1,239 @@
+.form {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 2fr 1fr;
+  align-items: flex-start;
+}
+
+.section {
+  padding: 2rem;
+  border-radius: 1.8rem;
+  background: rgba(6, 16, 24, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.section h2 {
+  font-family: var(--font-playfair);
+  letter-spacing: 0.12em;
+  margin: 0;
+}
+
+.section p {
+  margin: 0;
+  line-height: 1.7;
+  color: rgba(235, 240, 245, 0.85);
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.label select,
+.label input,
+.label textarea {
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(4, 9, 15, 0.55);
+  color: #f6f8fa;
+  padding: 0.9rem 1rem;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.label textarea {
+  resize: vertical;
+}
+
+.label select:focus,
+.label input:focus,
+.label textarea:focus {
+  border-color: #ffd166;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 209, 102, 0.25);
+}
+
+.helper {
+  font-size: 0.85rem;
+  color: rgba(235, 240, 245, 0.7);
+  margin: -0.5rem 0 0;
+}
+
+.inlineFields {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.fieldset {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1.5rem;
+  padding: 1.2rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: rgba(4, 9, 15, 0.45);
+}
+
+.fieldset legend {
+  font-size: 0.75rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  padding: 0 0.5rem;
+}
+
+.checkboxRow {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  font-size: 0.95rem;
+}
+
+.checkboxRow input {
+  margin-top: 0.35rem;
+}
+
+.checkboxRow span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.checkboxRow small {
+  color: rgba(235, 240, 245, 0.65);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.7rem;
+}
+
+.summary {
+  padding: 2rem 1.8rem;
+  border-radius: 1.8rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: sticky;
+  top: 6.5rem;
+}
+
+.summary h3 {
+  margin: 0;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+dl {
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+dl div {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.7rem;
+}
+
+dl dd {
+  margin: 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+}
+
+dl dt {
+  margin: 0;
+  color: rgba(235, 240, 245, 0.6);
+}
+
+.totals {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.totals span {
+  color: rgba(235, 240, 245, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.68rem;
+}
+
+.totals strong {
+  font-size: 1.1rem;
+}
+
+.grandTotal {
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin-top: 0.25rem;
+}
+
+.perGuest {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(235, 240, 245, 0.65);
+}
+
+.submit {
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 999px;
+  padding: 0.95rem 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #ffd166 0%, #ef476f 100%);
+  color: #0c1c26;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  transform: none;
+  box-shadow: none;
+}
+
+.submit:not(:disabled):hover,
+.submit:not(:disabled):focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(239, 71, 111, 0.35);
+}
+
+.disclaimer {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.6;
+  color: rgba(235, 240, 245, 0.7);
+}
+
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary {
+    position: static;
+  }
+}
